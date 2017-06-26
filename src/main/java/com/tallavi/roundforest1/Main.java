@@ -53,6 +53,8 @@ public class Main {
 
         logger.info(String.format("Most active users: %s", reviewsAnalysisResult.getMostActiveUsers()));
 
+        logger.info(String.format("Most used words: %s", reviewsAnalysisResult.getMostUsedWords()));
+
         if (shouldTranslate) {
 
             ITranslationProvider translationProvider = new TranslationProviderMock();
